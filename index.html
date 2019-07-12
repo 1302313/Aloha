@@ -15,46 +15,51 @@
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!--My CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
+  
     
+
 </head>
 <!--Body - Visible Section-->
 
 <body>
-    <!--Site Header - Fixed-->
+    <!--Site Header - Make Fixed-->
     <header id="site-header" class="site-header container">
         <!--Add logos in svg-->
-        <div class="company-logo">
-            <img src="images/aloha-logo.svg" alt="Aloha Apparel Co.">
-        </div>
-        <div class="shopping-cart">
-            <img src="images/cart-icon.svg" class="cart" alt="Shopping Cart">
-            <div class="cart-counter">
-<p class="counter">#</p>
+        <section class="site-header-flex">
+            <div class="company-logo">
+                <img src="images/aloha-logo.svg" alt="Aloha Apparel Co.">
             </div>
-        </div>
-        <div class="navigation-bar">
-            <nav class="navigation-top">
-                <ul>
-                    <li><a href="#" name="About">About</a></li>
-                    <li><a href="#" name="Shop">Shop</a></li>
-                    <li><a href="#" name="Featured">Featured</a></li>
-                    <li><a href="#" name="Updates">Updates</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div class="shopping-cart">
+                <img src="images/cart-icon.svg" class="cart" alt="Shopping Cart">
+                <div class="cart-counter">
+                    <p class="counter">#</p>
+                </div>
+            </div>
+           
+            <div class="navigation-bar">
+                <nav class="navigation-top">
+                    <ul>
+                        <li><a href="#" name="About">About</a></li>
+                        <li><a href="#" name="Shop">Shop</a></li>
+                        <li><a href="#" name="Featured">Featured</a></li>
+                        <li><a href="#" name="Updates">Updates</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
     </header>
     <!--Section 1 - Site Banner-->
-    <section id="banner" class="banner">
-        <div class="banner-label container">
+    <section id="banner" class="banner container">
+        <div class="banner-label">
             <p class="season-title">New Collection</p>
             <p class="season">Spring/Summer 2019</h2>
         </div>
     </section>
     <!--Section 2 - About Aloha-->
-    <section id="about" class="about">
-        <div class="about-text container">
+    <section id="about" class="about container">
+        <div class="about-text">
             <h2>
-                Hand-Crafted 
+                Hand-Crafted
                 <span class="emboss">
                     Styles
                 </span>
@@ -69,14 +74,26 @@
     </section>
     <!--Section 3 - All Product Categories-->
     <section id="products" class="products">
-        <div class="products">
+        <div class="product-category">
             <ul class=product-category>
-                <li><a href="#" name="Men">Men</a></li>
-                <li><a href="#" name="Women">Women</a></li>
-                <li><a href="#" name="Bags">Bags</a></li>
-                <li><a href="#" name="Glasses">Glasses</a></li>
-                <li><a href="#" name="Trends">Trends</a></li>
-                <li><a href="#" name="Sale">Sale</a></li>
+                <li class="wide-size men">
+                    <a class="product-text" href="#" name="Men">Men</a>
+                </li>
+                <li class="normal-size men">
+                    <a class="product-text" href="#" name="Bags">Bags</a>
+                </li>
+                <li class="normal-size men">
+                    <a class="product-text" href="#" name="Glasses">Glasses</a>
+                </li>
+                <li class="wide-size men">
+                    <a class="product-text" href="#" name="Trends">Trends</a>
+                </li>
+                <li class="wide-size men">
+                    <a class="product-text" href="#" name="Sale">Sale</a>
+                </li>
+                <li class="wide-size women">
+                    <a class="product-text" href="#" name="Women">Women</a>
+                </li>
             </ul>
         </div>
     </section>
@@ -84,7 +101,7 @@
     <section class="highlights">
         <div class="container">
             <h2>
-                Most-Loved 
+                Most-Loved
                 <span class="emboss">
                     Products
                 </span>
@@ -92,8 +109,8 @@
         </div>
     </section>
     <!--Section 5 - Subscribtion Form-->
-    <section class="signup">
-        <div class="signup-content container">
+    <section class="signup container">
+        <div class="signup-content">
             <div class="signup-text">
                 <h2>Sign-up for <span class="emboss">Updates</span></h2>
                 <p> Stay updated on our latest product releases.</p>
@@ -108,8 +125,8 @@
         </div>
     </section>
     <!--Site Footer-->
-    <footer id="site-footer" class="site-footer">
-        <section class="container">
+    <footer id="site-footer" class="site-footer container">
+        <section class="site-footer-flex">
             <div class="footer-text">
                 <p>&copy; 2019 Aloha Apparel&trade; Co.</p>
                 <p>Powered by HTML and CSS</p>
@@ -155,6 +172,8 @@
             </div>
         </section>
     </footer>
+    <!-- ECMAscript -->
+    <script src="script.js" /></script>
 </body>
 
 </html>
