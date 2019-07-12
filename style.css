@@ -26,7 +26,7 @@ body{
     font-size: 1rem;
     font-weight: 400;
     font-style: normal;
-    font-family: 'Raleway','Avenir', 'Arial';
+    font-family: 'Raleway','Avenir', Arial;
     line-height: 1;
 }
 
@@ -125,6 +125,8 @@ p{
     height: 2px;
     width: 2px;
     border-radius: 8px;
+    border: 1px solid black;
+    background-color: crimson;
 /* Text and Cell Alignment */
     display: flex;
     align-items: center;
@@ -132,12 +134,10 @@ p{
     position: absolute;
     top:  0%;
     left: 75%;
-/* Text and Cell Color */
+/* Text Size and Color */
     font-size: 50%;
     font-weight: bold;
     font-family: sans-serif;
-    border: 1px solid black;
-    background-color: crimson;
   }
 .cart-counter p{
     color: rgb(222, 227, 237);
@@ -163,7 +163,7 @@ p{
     /* Text and Cell Alignment */
     text-align: center;
     position: absolute;
-    /* Text and Cell Color */
+    /* Text Color */
     font-size: 50%;
     font-weight: 800;
     color:#fff;
@@ -188,17 +188,24 @@ p{
 /* Section 3 - All Product Design */
 
 .product-text {
+  
+    /* Text Size and Color */
+    color: #fff;
     font-size: 50%;
     font-weight: bold;
-    font-family: Raleway Web, sans-serif;
+    font-family: 'Raleway Web', sans-serif;
 
 
 }
 
 /* Section 4 - Featured Products Design */
 
+.highlights{
+    margin-bottom: 1.25rem;
+}
+.cell{
 
-
+}
 /* Section 5 - Subscribtion Form Design */
 .signup h2, .signup p{
     
@@ -208,39 +215,51 @@ p{
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%), url(images/wave-bkgd.jpg) no-repeat center bottom;
     background-size: cover;
 
-    /* Flexxing */
+    /* Cell Alignment */
     display: flex;
     justify-content: center;
     align-content: center;
 }
 .signup-content{
-    text-align: center;
+    /* Cell Design */
+    margin: 0 auto;
     padding: 2rem;
+    width:100%;
+    text-align: center;
+    
+
   
 
 }
 
 
 .signup-form{
+    /* Cell Design */
     position: relative;
-    width: 90%;
-    margin: 1.5rem auto 0;
-
+    width: 75%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    /* Cell Alignment */
+    display: flex;
+    justify-content: center;
 }
 #signup-email{
+    /* Cell Design */
+    width: 40%;
     padding: 0.5rem 2rem;
+    border: 0px;
+    border-radius: 20px;
 }
 #subscribe{
-    position: absolute;
+    /* Cell Design */
     padding: 0.25rem 1.5rem;
     border: 0px;
     border-radius: 50px;
-
-
-
+    background-color: #e2574c;
+    /* Text Size and Color */
     color: #ffffff;
     font-weight: bolder;
-    background-color: #e2574c;
+   
 
 
 }
@@ -264,14 +283,29 @@ p{
     align-content: center;
     align-items: center;
 }
+.footer-text{
+    margin-bottom: 1rem;
+}
+.copyright p,
+    .address p{
+        line-height: 1;
+}
+.contact{
+    margin: 1rem 0;
+}
+
 .footer-text p{
     color: #fff
 }
 .social-media{
-    margin-top: 1.25rem;
+    line-height: 2.25;
+    size: auto;
+    margin-top: 1rem;
+}
+.social-media-name{
+    display:none;
 }
 .social-media-list li{
- /* Hide the text. */
     color: #fff;
     display: inline-block;
 }
@@ -280,21 +314,56 @@ p{
 
 /* Mobile Design */
 @media screen and (max-width: 230px){
- 
-    
+    .cell {
+        width: 100%;
+        text-align: center;
+    }
 }
 @media screen and (min-width: 540px){
-
-    /* Footer text becomes centered */
+    .cell {
+        width: 100%;
+        text-align: center;
+    }
+    .site-footer-flex{
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .social-media-list{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .social-media-name{
+        display:inline-block;
+    }
+    .social-media{
+        margin-top: 0;
+    }
+    .footer-text{
+        margin-bottom: 0;
+        text-align: left;
+    }
 }
 
 /* Tablet Design */
 @media screen and (min-width: 600px){
- font-size: 16px;
+    html{
+        font-size: 16px;
+    }
+
+    .cell {
+        width: 50%;
+      }
+    .site-footer-flex{
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
 }
 /* Full screen Design - Large */
 @media screen and (min-width: 1240px){
-  
+    .cell {
+        width: 25%;
+      }
 }
 /* The End of this document */
 

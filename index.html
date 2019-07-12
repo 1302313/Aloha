@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Flickty Slider - CSS Link -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- Flickity Slider - JavaScript Link -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!--My CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
-  
-    
-
 </head>
 <!--Body - Visible Section-->
 
@@ -35,7 +36,7 @@
                     <p class="counter">#</p>
                 </div>
             </div>
-           
+
             <div class="navigation-bar">
                 <nav class="navigation-top">
                     <ul>
@@ -98,14 +99,113 @@
         </div>
     </section>
     <!--Section 4 - Featured Products-->
-    <section class="highlights">
-        <div class="container">
+    <section id="highlights" class="highlights container">
+        <div class="highlights-content">
             <h2>
                 Most-Loved
                 <span class="emboss">
                     Products
                 </span>
             </h2>
+
+            <div class="carousel">
+                <div class="cell">
+                    <img src="images/checked-stretch-dress.jpg" alt="Red color checked stretch dress">
+                    <p class="product-type">
+                        Dresses
+                    </p>
+                    <h3>
+                        Checked Stretch Dress
+                    </h3>
+                    <p class="product-price">
+                        Priceless!
+                    </p>
+                </div>
+                <div class="cell">
+                    <img src="images/blue-silk-dress.jpg" alt="Blue silk dress">
+                    <p class="product-type">
+                        Dresses
+                    </p>
+                    <h3>
+                        Blue Silk Dress
+                    </h3>
+                    <p class="product-price">
+                        $119
+                    </p>
+                </div>
+                <div class="cell">
+                    <img src="images/cotton-yellow-tshirt.jpg" alt="cotton-yellow-tshirt">
+                    <p class="product-type">
+                        Shirts
+                    </p>
+                    <h3>
+                        Cotton Yellow T-Shirt
+                    </h3>
+                    <p class="product-price">
+                        $39
+                    </p>
+                </div>
+                <div class="cell">
+                    <img src="images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
+                    <p class="product-type">
+                        Backpacks
+                    </p>
+                    <h3>
+                        #NotRED&trade; Hipster Backpack
+                    </h3>
+                    <p class="product-price">
+                        $69
+                    </p>
+                </div>
+                <div class="cell">
+                    <img src="images/pink-dotted-dress.jpg" alt="pink-dotted-dress">
+                    <p class="product-type">
+                        Dresses
+                    </p>
+                    <h3>
+                        Pink Spotted Dress
+                    </h3>
+                    <p class="product-price">
+                        $99
+                    </p>
+                </div>
+                <div class="cell">
+                    <img src="images/demin-overall-shorts.jpg" alt="demin-overall-shorts">
+                    <p class="product-type">
+                        Overalls
+                    </p>
+                    <h3>
+                        Short Denim Overall
+                    </h3>
+                    <p class="product-price">
+                        $89
+                    </p>
+                </div>
+                <div class="cell">
+                    <img src="images/stretch-knit-dress.jpg" alt="stretch-knit-dress">
+                    <p class="product-type">
+                        Dresses
+                    </p>
+                    <h3>
+                        Stretch Knit Dress
+                    </h3>
+                    <p class="product-price">
+                        $169
+                    </p>
+                </div>
+                <div class="cell">
+                    <img src="images/cotton-blue-shirt.jpg" alt="cotton-blue-shirt">
+                    <p class="product-type">
+                        Shirts
+                    </p>
+                    <h3>
+                        Cotton Denim Shirt
+                    </h3>
+                    <p class="product-price">
+                        $13
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <!--Section 5 - Subscribtion Form-->
@@ -128,11 +228,19 @@
     <footer id="site-footer" class="site-footer container">
         <section class="site-footer-flex">
             <div class="footer-text">
-                <p>&copy; 2019 Aloha Apparel&trade; Co.</p>
-                <p>Powered by HTML and CSS</p>
-                <p>634-634-1313</p> <a href="mailto:info@alohaapparel.com" target="_blank"
-                    name="Email">info@alohaapparel.com</a>
-                <p>1490 West Broadway <br /> Vancouver, BC Canada</p>
+                <div class="copyright">
+                    <p>&copy; 2019 Aloha Apparel&trade; Co.</p>
+                    <p>Powered by HTML and CSS with a touch of JavaScript</p>
+                </div>
+                <div class="contact">
+                    <p>634-634-1313</p>
+                    <a href="mailto:info@alohaapparel.com" target="_blank" name="Email">
+                        info@alohaapparel.com
+                    </a>
+                </div>
+                <div class="address">
+                    <p>1490 West Broadway <br /> Vancouver, BC Canada</p>
+                </div>
             </div>
             <div class="social-media">
                 <ul class="social-media-list">
@@ -173,7 +281,8 @@
         </section>
     </footer>
     <!-- ECMAscript -->
-    <script src="script.js" /></script>
+    <script src="script.js">
+    </script>
 </body>
 
 </html>
