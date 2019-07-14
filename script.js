@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // JS Code
     /* Pop up window */
     let magic = prompt ("Please type a number from 1 to 10");
-    alert("Thank you!!")
-    console.log(magic);
+    alert("Thank you!!");
 
   
   
@@ -20,8 +19,10 @@ const flkty = new Flickity( elem, {
   cellAlign: 'left',
   wrapAround: true,
   freeScroll: true,
-    // autoPlay: true,
+  // autoPlay: true,
+   
     
+
 });
   
   
