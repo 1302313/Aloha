@@ -1,4 +1,4 @@
-//
+// Contain
 document.addEventListener("DOMContentLoaded", function () {
 
   // All JavaScript
@@ -7,18 +7,21 @@ document.addEventListener("DOMContentLoaded", function () {
   alert("Thank you for visiting Aloha Apparel!!");
 
   // Site Header - Shopping Cart Notification Item
-  // const cartLogo = document.getElementById('shopping-cart');
+  const cartImg = document.getElementById('cart-counter');
   const clickCell = document.getElementById('carousel');
   const clickNum = document.getElementById('counter');
   console.log(clickNum);
   console.log(clickCell);
   let clicks = 0;
-  clickCell.addEventListener('click', function(event) {
-    clicks += 1
+  cartImg.style.display = 'none';
+  clickCell.addEventListener('click', function (event) {
+    clicks += 1;
     clickNum.innerHTML = clicks;
-    console.log(clicks);
-    console.log(event);
   });
+  if (clicks > 0) {
+    cartImg.style.display = 'flex';
+  };
+  console.log(clicks);
 
   // Site Header - Navigation Bar (Smooth Scrolling to sections)
   // Make sure to add Jquery link to html
@@ -61,20 +64,15 @@ document.addEventListener("DOMContentLoaded", function () {
   })
   // Section 5 - Subscription Form Email Validation
 
-    let messageForm = document.getElementById("signup");
-    const input = document.getElementById('signup-email');
-    messageForm.addEventListener('submit', function (event) {
-      event.preventDefault();
-      const trimVal = input.value.trim();
-      if (trimVal == "") {
-        alert("Please enter some text");
-      } else {
-        alert("Thank you for your subscription!");
-      }
-    });
+  let messageForm = document.getElementById("signup");
+  const input = document.getElementById('signup-email');
+  messageForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const trimVal = input.value.trim();
+    if (trimVal == "") {
+      alert("Please enter some text");
+    } else {
+      alert("Thank you for your subscription!");
+    }
   });
-
-
-
-
-  
+});
