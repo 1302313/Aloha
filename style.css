@@ -23,7 +23,7 @@ html{
 body{
     color: #2d2d2d;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-family: 'Raleway','Avenir', Arial;
     line-height: 1;
@@ -96,6 +96,8 @@ p{
     text-align: center;
     flex: 100%;
     padding-top: 1rem;
+    border-top: 1px solid #d7d7d7;
+    margin-top: 1rem;
 }
 
 .navigation-top li{
@@ -116,6 +118,7 @@ p{
     cursor: pointer;
     text-shadow: #ffaa83;
     background-color: #ffe4c0;
+    color: #b64036;
     border: 0;
     border-radius: 10px;
     }
@@ -156,11 +159,12 @@ p{
     font-weight: bold;
     font-family: sans-serif;
   }
-.cart-counter p{
+.counter{
     color: rgb(222, 227, 237);
     text-align: center;
     width: 100%;
-    transform: translate(0.5px, 1px);
+    font-size: 0.75rem;
+    transform: translate(0.5px, 0.5px);
 }
 
 
@@ -183,19 +187,26 @@ p{
     /* Text and Cell Alignment */
     text-align: center;
     position: absolute;
-    /* Text Color */
+    /* Text Size and Color */
     font-size: 50%;
     font-weight: 800;
-    color:#fff;
- 
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+
 }
 .season-title {
     font-size: 1.5rem;
     text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    line-height: 1;
 }
 .season {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Playfair Display', Helvetica, sans-serif;
+    color: #fff;
+    line-height:1;
+    
 }
 
 /* Section 2 - About Aloha Design*/
@@ -209,33 +220,43 @@ p{
 
 .product-category{
     /* Cell Alignment */
-    display:flex;
-    justify-content: center;
-    text-align: center;
+    /* display:flex; */
+    /* justify-content: center; */
+    /* text-align: center; */
 }
 
 .product-text {
     /* Cell Alignment */
+    /* top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1vh; */
+    /* position: absolute; */
     /* Text Size and Color */
     color: #e2574c;
     text-shadow: rgba(0,0,0,0.2);
     text-transform: uppercase;
     font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Raleway Web', sans-serif;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+   
 }
 
 .wide-size{
     /* Cell Design */
-    border: 4px solid #fff;
-    position: relative;
+    /* border: 4px solid #fff; */
+    /* position: relative;
     max-width:100%;
+    height: auto;
+    margin: auto; */
+
 }
 .normal-size{
     /* Cell Design */
-    border: 4px solid #fff;
-    position: relative;
-    max-width: 100%;
+    /* border: 4px solid #fff; */
+    /* position: relative;
+    max-width: 50%; */
 }
 .men{
     background: linear-gradient(180deg,rgba(0,0,0,0.2)0, rgba(0,0,0,0.2)),url(images/mens-category.jpg), no-repeat 50%;
@@ -332,9 +353,9 @@ iframe{
    
 }
 input, button, textarea{
-    font-family: 'Raleway Web', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
 }
 .email-bar{
@@ -369,6 +390,7 @@ input, button, textarea{
 }
 #subscribe:hover{
     cursor: pointer;
+    color: #b64036;
     background-color: #ffaa83;
 }
 
@@ -382,7 +404,6 @@ input, button, textarea{
 }
 .site-footer a{
     color: #fff;
-    font-family: 'Playfair Display Web';
     text-decoration: none;
 }
 
@@ -396,8 +417,6 @@ input, button, textarea{
     align-content: center;
     align-items: center;
     text-align: center;
-
-
     
 }
 .footer-text{
@@ -407,7 +426,7 @@ input, button, textarea{
 }
 .footer-text div p{
     color: #fff;
-    font-family: 'Playfair Display Web', serif;
+    font-family: 'Playfair Display', serif;
 }
 .copyright p,
     .address p{
@@ -481,6 +500,9 @@ i{
 @media screen and (min-width: 600px){
     html{
         font-size: 16px;
+    }
+    .season {
+        font-size: 3.2rem;
     }
     .cell {
         width: 50%;
