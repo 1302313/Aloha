@@ -16,12 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
   cartImg.style.display = 'none';
   clickCell.addEventListener('click', function (event) {
     clicks += 1;
+    if (clicks > 0) {
+      cartImg.style.display = 'flex';
+    };  
+    console.log(clicks);
     clickNum.innerHTML = clicks;
   });
-  if (clicks > 0) {
-    cartImg.style.display = 'flex';
-  };
-  console.log(clicks);
+ 
 
   // Site Header - Navigation Bar (Smooth Scrolling to sections)
   // Make sure to add Jquery link to html
