@@ -29,6 +29,6 @@ The following animations are added to the website using CSS and JS to allow for 
 * Shopping Cart Notification Item
 * Email Validation and Alerts
 ### Mobile Adaptive Header and Footer
-
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](RMEImages/Adaptive&#32;Header&#32;(LFR).gif)
+![Alt Text ](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 :octocat:
