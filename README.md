@@ -36,7 +36,7 @@ The following animations are added to the website using CSS and JS to allow for 
 
 ### Link Adaptive Cursor and Hover
 <br>
-![Alt Text](RMEImages/cursor&#32;and&#32;hover&#32;adaptation.gif)
+![Alt Text](/RMEImages/cursor&#32;and&#32;hover&#32;adaptation.gif)
 
 ### Transparent Fixed Header
 <br>
