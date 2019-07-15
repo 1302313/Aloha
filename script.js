@@ -4,9 +4,23 @@ document.addEventListener("DOMContentLoaded", function () {
   // All JavaScript
   /* Pop up window */
   // let magic = prompt("Please type a number from 1 to 10");
-  alert("Thank you!!");
+  alert("Thank you for visiting Aloha Apparel!!");
 
-  // Smooth Scrolling to sections
+  // Site Header - Shopping Cart Notification Item
+  // const cartLogo = document.getElementById('shopping-cart');
+  const clickCell = document.getElementById('carousel');
+  const clickNum = document.getElementById('counter');
+  console.log(clickNum);
+  console.log(clickCell);
+  let clicks = 0;
+  clickCell.addEventListener('click', function(event) {
+    clicks += 1
+    clickNum.innerHTML = clicks;
+    console.log(clicks);
+    console.log(event);
+  });
+
+  // Site Header - Navigation Bar (Smooth Scrolling to sections)
   // Make sure to add Jquery link to html
   /* Reference: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp */
   /* Reference: https://css-tricks.com/snippets/jquery/smooth-scrolling/ */
@@ -26,12 +40,13 @@ document.addEventListener("DOMContentLoaded", function () {
       // Identify the HTML Element to animate()
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 600, function () {
+      }, 1600, function () {
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       })
     }
   });
+  // add notifiction display:flex when cart is marked
 
   // Section 4 - Most Loved Products (Carousel movement)
 
@@ -44,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     freeScroll: true,
     autoPlay: true,
   })
-// Section 5 - Subscribtion Form Email Validation
+  // Section 5 - Subscription Form Email Validation
 
     let messageForm = document.getElementById("signup");
     const input = document.getElementById('signup-email');
@@ -54,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (trimVal == "") {
         alert("Please enter some text");
       } else {
-        alert("Thank you for your subscribtion!");
+        alert("Thank you for your subscription!");
       }
     });
   });
@@ -62,4 +77,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  // add notifiction display:flex when cart is marked
+  

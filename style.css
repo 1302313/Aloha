@@ -295,6 +295,7 @@ p{
 .cell{
     width: 100%;
     text-align: center;
+    cursor: pointer;
 }
 iframe{
     border: 10px double coral;
