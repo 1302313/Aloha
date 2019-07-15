@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
   })
 // Section 5 - Subscribtion Form Email Validation
 
-    let messageForm = document.getElementById('subscribe');
+    let messageForm = document.getElementById("signup");
     const input = document.getElementById('signup-email');
-    messageForm.onclick("submit", function (event) {
+    messageForm.addEventListener('submit', function (event) {
       event.preventDefault();
       const trimVal = input.value.trim();
       if (trimVal == "") {
