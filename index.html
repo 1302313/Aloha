@@ -9,14 +9,16 @@
     <title>Aloha Apparel &trade Co.;</title>
     <!--Eric Meyer CSS Reset Link-->
     <link rel="stylesheet" type="text/css" href="reset.css">
+    <!-- Flickity Slider - JavaScript Link -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--JQuery Reference Link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Typography/Icons-->
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Flickty Slider - CSS Link -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <!-- Flickity Slider - JavaScript Link -->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!--My CSS-->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -75,25 +77,25 @@
     </section>
     <!--Section 3 - All Product Categories-->
     <section id="products" class="products">
-            <ul class=product-category>
-                <li class="wide-size men">
-                    <a class="product-text" href="#" name="Men">Men</a>
-                </li>
-                <li class="normal-size bags">
-                    <a class="product-text" href="#" name="Bags">Bags</a>
-                </li>
-                <li class="normal-size glasses">
-                    <a class="product-text" href="#" name="Glasses">Glasses</a>
-                </li>
-                <li class="normal-size trends">
-                    <a class="product-text" href="#" name="Trends">Trends</a>
-                </li>
-                <li class="normal-size sale">
-                    <a class="product-text" href="#" name="Sale">Sale</a>
-                </li>
-                <li class="wide-size women">
-                    <a class="product-text" href="#" name="Women">Women</a>
-                </li>
+        <div class=product-category>
+            <div class="wide-size men">
+                <a class="product-text" href="#" name="Men">Men</a>
+            </div>
+            <div class="normal-size bags">
+                <a class="product-text" href="#" name="Bags">Bags</a>
+            </div>
+            <div class="normal-size glasses">
+                <a class="product-text" href="#" name="Glasses">Glasses</a>
+            </div>
+            <div class="normal-size trends">
+                <a class="product-text" href="#" name="Trends">Trends</a>
+            </div>
+            <div class="normal-size sale">
+                <a class="product-text" href="#" name="Sale">Sale</a>
+            </div>
+            <div class="wide-size women">
+                <a class="product-text" href="#" name="Women">Women</a>
+            </div>
             </ul>
     </section>
     <!--Section 4 - Featured Products-->
@@ -204,22 +206,24 @@
                     </p>
                 </div>
                 <div class="cell">
-                        <iframe width="250" height="300" src="https://www.youtube-nocookie.com/embed/q2n1jm14_nE?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <p class="product-type">
-                            Bass
-                        </p>
-                        <h3>
-                            Jim B.
-                        </h3>
-                        <p class="product-price">
-                            $$$$
-                        </p>
+                    <iframe width="250" height="300" src="https://www.youtube-nocookie.com/embed/q2n1jm14_nE?start=1"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <p class="product-type">
+                        Bass
+                    </p>
+                    <h3>
+                        Jim B.
+                    </h3>
+                    <p class="product-price">
+                        $$$$
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <!--Section 5 - Subscribtion Form-->
-    <section class="signup container">
+    <section id="signup" class="signup container">
         <div class="signup-content">
             <div class="signup-text">
                 <h2>Sign-up for <span class="emboss">Updates</span></h2>

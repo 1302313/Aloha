@@ -15,7 +15,6 @@ html{
     margin: 0 auto;
     max-width: 100%;
     min-width: 300px;
-   
 }
 .container-small{
     width: 720px;
@@ -48,7 +47,8 @@ h2{
 
 }
 h3{
-    
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 h3, a{
     color: #e2574c;
@@ -124,7 +124,6 @@ p{
 .shopping-cart{
     display: flex;
     align-items: center;
-    justify-content: center;
     position: relative;
 }
 .shopping-cart img{
@@ -139,10 +138,10 @@ p{
 
 .cart-counter {
 /* Notification Cell Design */
-    padding: 4px 4px 4px 4px;
-    height: 2px;
-    width: 2px;
-    border-radius: 8px;
+    padding: 2px;
+    height: 12px;
+    width: 12px;
+    border-radius: 10px;
     border: 1px solid black;
     background-color: crimson;
 /* Text and Cell Alignment */
@@ -159,6 +158,9 @@ p{
   }
 .cart-counter p{
     color: rgb(222, 227, 237);
+    text-align: center;
+    width: 100%;
+    transform: translate(0.5px, 1px);
 }
 
 
@@ -210,11 +212,6 @@ p{
     display:flex;
     justify-content: center;
     text-align: center;
-    /* Text Size and Color */
-}
-
-.product-category li, .product-category li a{
-    display: block;
 }
 
 .product-text {
@@ -270,7 +267,9 @@ p{
 /* Section 4 - Featured Products Design */
 
 .highlights{
+    padding: 3rem 0;
     margin-bottom: 1.5rem;
+    min-width: 315px;
 }
 .cell{
     width: 100%;
@@ -279,6 +278,19 @@ p{
 iframe{
     border: 10px double coral;
     border-radius: 10px;
+}
+.product-type, .product-price{
+    color: #969696;
+   
+}
+.product-type{
+    margin-bottom: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.product-price{
+    font-weight: 400;
 }
 /* Section 5 - Subscribtion Form Design */
 .signup-text h2, .signup-text p{
@@ -312,12 +324,18 @@ iframe{
 .signup-form{
     /* Cell Design */
     position: relative;
-    width: 75%;
+    width: 95%;
     padding: 1rem 0;
     margin: 0 auto;
     justify-content: center;
 
    
+}
+input, button, textarea{
+    font-family: 'Raleway Web', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
 }
 .email-bar{
     /* Cell Design */
@@ -336,6 +354,7 @@ iframe{
     padding: 0.5rem 2rem;
     border: 0px;
     border-radius: 20px;
+    opacity: 0.6;
 
 }
 #subscribe{
@@ -346,13 +365,11 @@ iframe{
     background-color: #e2574c;
     /* Text Size and Color */
     color: #ffffff;
-    font-weight: bolder;
-   
-
 
 }
 #subscribe:hover{
     cursor: pointer;
+    background-color: #ffaa83;
 }
 
 /* Site Footer Design */
@@ -366,7 +383,7 @@ iframe{
 .site-footer a{
     color: #fff;
     font-family: 'Playfair Display Web';
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .site-footer-flex{
@@ -385,6 +402,8 @@ iframe{
 }
 .footer-text{
     margin-bottom: 1rem;
+    text-decoration: underline;
+    
 }
 .footer-text div p{
     color: #fff;
@@ -437,16 +456,20 @@ i{
     .site-footer-flex{
         flex-flow: row wrap;
         justify-content: space-between;
+        padding: 3rem 3rem 3rem 0;
     }
     .social-media-list{
         display: flex;
         flex-flow: column wrap;
     }
+    
     .social-media-name{
         display:inline-block;
     }
     .social-media{
         margin-top: 0;
+        text-align: end;
+        
     }
     .footer-text{
         margin-bottom: 0;
