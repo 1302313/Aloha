@@ -222,9 +222,12 @@ p{
 
 .product-category{
     /* Cell Alignment */
-    /* display:flex; */
-    /* justify-content: center; */
-    /* text-align: center; */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50vw;
 }
 
 .product-text {
@@ -252,6 +255,7 @@ p{
     max-width:100%;
     height: auto;
     margin: auto; */
+    flex:50%;
 
 }
 .normal-size{
@@ -259,6 +263,19 @@ p{
     /* border: 4px solid #fff; */
     /* position: relative;
     max-width: 50%; */
+    flex: 50%;
+}
+.normal-sizera{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 50%;
+}
+.normal-sizerb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 50%;
 }
 .men{
     background: linear-gradient(180deg,rgba(0,0,0,0.2)0, rgba(0,0,0,0.2)),url(images/mens-category.jpg), no-repeat 50%;
