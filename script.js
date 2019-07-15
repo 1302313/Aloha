@@ -44,23 +44,22 @@ document.addEventListener("DOMContentLoaded", function () {
     freeScroll: true,
     autoPlay: true,
   })
+// Section 5 - Subscribtion Form Email Validation
 
-  //   const messageForm = document.getElementById("email-bar");
-  //   const input = document.getElementById("signup-email");
-
-  //   messageForm.addEventListener("submit", function (event) {
-  //     event.preventDefault();
-  //     const trimVal = input.value.trim();
-  //     if (trimVal == "") {
-  //       alert("Please enter some text");
-  //     } else {
-  //       alert("Thank you for your subscribtion");
-  //     }
-  //   });
-  // });
+    let messageForm = document.getElementById('subscribe');
+    const input = document.getElementById('signup-email');
+    messageForm.onclick("submit", function (event) {
+      event.preventDefault();
+      const trimVal = input.value.trim();
+      if (trimVal == "") {
+        alert("Please enter some text");
+      } else {
+        alert("Thank you for your subscribtion!");
+      }
+    });
+  });
 
 
 
 
   // add notifiction display:flex when cart is marked
-});

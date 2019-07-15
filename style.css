@@ -314,10 +314,14 @@ iframe{
     font-weight: 400;
 }
 /* Section 5 - Subscribtion Form Design */
-.signup-text h2, .signup-text p{
-    color: #fff;   
-}
+
+.signup-text p{
+    color: #fff; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}  
+
 .signup-text h2{
+    color: #fff;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
