@@ -57,6 +57,12 @@ The following animations are added to the website using CSS and JS to allow for 
 
 ![Alt Text](/RMEImages/email&#32;validation.gif)
 
-## Contributions
+### Aloha Apparel&trade; Co.
+
+![Alt Text](/RMEImages/Version1.gif)
+
+## Summary 
+
+This (static) website is powered by HTML and CSS with a touch of JavaScript portraying a dynamic dance between the languages when they are linked together.
 
 :octocat:

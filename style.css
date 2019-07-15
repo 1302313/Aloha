@@ -169,7 +169,6 @@ p{
     transform: translate(0.5px, 0.5px);
 }
 
-
 /* Section 1 - Site Banner Design */
 
 .banner{
@@ -184,7 +183,6 @@ p{
     align-items: center;
     justify-content: center;
 }
-
 .banner-label{
     /* Text and Cell Alignment */
     text-align: center;
@@ -193,7 +191,6 @@ p{
     font-size: 50%;
     font-weight: 800;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-
 }
 .season-title {
     font-size: 1.5rem;
@@ -208,7 +205,6 @@ p{
     font-family: 'Playfair Display', Helvetica, sans-serif;
     color: #fff;
     line-height:1;
-    
 }
 
 /* Section 2 - About Aloha Design*/
@@ -228,54 +224,71 @@ p{
     flex-direction: row;
     justify-content: space-evenly;
     height: 50vw;
+    min-width: 400px;
 }
-
 .product-text {
     /* Cell Alignment */
     /* top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 1vh; */
+    height: 1vw; */
     /* position: absolute; */
     /* Text Size and Color */
-    color: #e2574c;
-    text-shadow: rgba(0,0,0,0.2);
+    
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
-   
+}
+.product-text a{
+    color: #fff;
+}
+.product-text a:hover{
+    color: #b64036;
 }
 
-.wide-size{
-    /* Cell Design */
-    /* border: 4px solid #fff; */
-    /* position: relative;
-    max-width:100%;
-    height: auto;
-    margin: auto; */
-    flex:50%;
-
+.wide-sizea{
+    flex:45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wide-sizeb{
+    flex: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wide-sizea, .normal-sizea{
+    border-bottom: 5px solid #fff;
+}
+.wide-sizeb, .normal-sizeb{
+    border-top: 5px solid #fff;
+}
+.wide-sizea, .normal-sizeb{
+    border-right: 5px solid #fff;
+}.wide-sizeb, .normal-sizea{
+    border-left: 5px solid #fff;
 }
 .normal-size{
     /* Cell Design */
-    /* border: 4px solid #fff; */
-    /* position: relative;
-    max-width: 50%; */
-    flex: 50%;
+    max-width: 50%; 
+    flex: 45%;
 }
-.normal-sizera{
+.normal-sizea{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex: 50%;
+    flex: 45%;
 }
-.normal-sizerb{
+.normal-sizeb{
     display: flex;
+   
     flex-direction: row;
     flex-wrap: wrap;
-    flex: 50%;
+    flex: 45%;
 }
 .men{
     background: linear-gradient(180deg,rgba(0,0,0,0.2)0, rgba(0,0,0,0.2)),url(images/mens-category.jpg), no-repeat 50%;
@@ -284,26 +297,39 @@ p{
 .bags{
     background: linear-gradient(180deg,rgba(0,0,0,0.2)0, rgba(0,0,0,0.2)),url(images/bags-category.jpg), no-repeat 50%;
     background-size: cover, cover;
+    border-right: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .glasses{
     background: linear-gradient(180deg,rgba(0,0,0,0.2)0, rgba(0,0,0,0.2)),url(images/glasses-category.jpg), no-repeat 50%;
     background-size: cover, cover;
+    border-left: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .sale{
     background: linear-gradient(180deg,rgba(0,0,0,0.2)0, rgba(0,0,0,0.2)),url(images/sale-category.jpg), no-repeat 50%;
     background-size: cover, cover;
+    border-left: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 .trends{
     background: linear-gradient(180deg,rgba(0,0,0,0.2)0, rgba(0,0,0,0.2)),url(images/trends-category.jpg), no-repeat 50%;
     background-size: cover, cover;
+    border-right: 5px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .women{
     background: linear-gradient(180deg,rgba(0,0,0,0.2)0, rgba(0,0,0,0.2)),url(images/womens-category.jpg), no-repeat 50%;
     background-size: cover, cover;
 }
-
 
 /* Section 4 - Featured Products Design */
 
@@ -334,24 +360,21 @@ iframe{
 .product-price{
     font-weight: 400;
 }
+
 /* Section 5 - Subscribtion Form Design */
 
 .signup-text p{
     color: #fff; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }  
-
 .signup-text h2{
     color: #fff;
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
-
-
 .signup{
     position: relative;
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%), url(images/wave-bkgd.jpg) no-repeat center bottom;
     background-size: cover;
-
     /* Cell Alignment */
     display: flex;
     justify-content: center;
@@ -364,18 +387,13 @@ iframe{
     width:100%;
     text-align: center;
 }
-
-
-
 .signup-form{
     /* Cell Design */
     position: relative;
     width: 95%;
     padding: 1rem 0;
     margin: 0 auto;
-    justify-content: center;
-
-   
+    justify-content: center;   
 }
 input, button, textarea{
     font-family: 'Raleway', sans-serif;
@@ -391,8 +409,7 @@ input, button, textarea{
     background-color: #fff;
     /* Cell Alignment */
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 #signup-email{
     /* Cell Design */
@@ -400,8 +417,7 @@ input, button, textarea{
     padding: 0.5rem 2rem;
     border: 0px;
     border-radius: 20px;
-    opacity: 0.6;
-
+    opacity: 0.7;
 }
 #subscribe{
     /* Cell Design */
@@ -423,15 +439,12 @@ input, button, textarea{
 
 .site-footer{
     /* Cell Design */
-    
     background-color: #242424;
-    
 }
 .site-footer a{
     color: #fff;
     text-decoration: none;
 }
-
 .site-footer-flex{
     /* Cell Design */
     padding: 3rem;
@@ -442,7 +455,6 @@ input, button, textarea{
     align-content: center;
     align-items: center;
     text-align: center;
-    
 }
 .footer-text{
     margin-bottom: 1rem;
