@@ -1,4 +1,4 @@
-# Aloha Project - README
+# Aloha - README
 This is my first project for the Web Development Programme showcasing the requirements for responsive web development using HTML, CSS and JavaScript.
 ## Technologies Used
 The following highlights the languages used to markup, design and animate the Aloha Apparel website along with the key functions used for each language:
